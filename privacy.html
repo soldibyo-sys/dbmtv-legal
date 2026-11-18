@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>디비마TV 쇼츠 개인정보 처리방침</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<style>
+  /* Layout: one readable legal column, Korean first, English below */
+  :root {
+    --bg: #fbfaf7; --fg: #23211d; --muted: #6b665c; --line: #e3ded3; --accent: #c8541f;
+    --ko: "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+    --en: "IBM Plex Sans", "Segoe UI", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #191815; --fg: #ece8df; --muted: #a39e93; --line: #36332d; --accent: #f08a55; color-scheme: dark } }
+  :root[data-theme="dark"] { --bg: #191815; --fg: #ece8df; --muted: #a39e93; --line: #36332d; --accent: #f08a55; color-scheme: dark }
+  body { background: var(--bg); color: var(--fg); font-family: var(--ko); line-height: 1.75; }
+  .wrap { max-width: 44rem; margin: 0 auto; padding-block: 48px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  .kicker { font: 600 0.78rem/1 var(--en); letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+  h1 { font-size: 1.7rem; line-height: 1.3; margin: 10px 0 4px; text-wrap: balance; }
+  .date { color: var(--muted); font-size: 0.9rem; margin: 0 0 28px; }
+  h2 { font-size: 1.05rem; margin: 26px 0 6px; }
+  p, li { font-size: 1rem; }
+  ul, ol { padding-left: 1.3rem; margin: 0; display: grid; gap: 6px; }
+  code { font-family: Consolas, "Courier New", monospace; font-size: 0.92em; }
+  .en { margin-top: 44px; padding-top: 24px; border-top: 1px solid var(--line); font-family: var(--en); }
+  .en h2 { font-family: var(--en); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="kicker">DBMTV Shorts · Privacy Policy</div>
+  <h1>디비마TV 쇼츠 개인정보 처리방침</h1>
+  <p class="date">시행일: 2026년 11월 19일</p>
+
+  <h2>1. 누가 쓰나요</h2>
+  <p>"디비마TV 쇼츠"는 유튜브 채널 디비마TV 운영자 한 사람이 자신의 틱톡 계정에 영상 초안을 보낼 때 쓰는 개인용 데스크톱 도구입니다. 다른 사람은 이 도구에 로그인하지 않습니다.</p>
+
+  <h2>2. 받는 정보</h2>
+  <ul>
+    <li>틱톡 로그인 뒤 받는 접근 토큰과 갱신 토큰</li>
+    <li>틱톡 기본 계정 정보(<code>user.info.basic</code>: 계정 식별자, 표시 이름)</li>
+  </ul>
+  <p>영상 업로드에는 <code>video.upload</code> 권한만 씁니다. 다른 이용자의 정보, 연락처, 위치, 메시지는 받지 않습니다.</p>
+
+  <h2>3. 쓰는 목적</h2>
+  <p>운영자가 만든 영상을 운영자 본인의 틱톡 초안함으로 보내는 데에만 씁니다. 광고, 분석, 판매에 쓰지 않습니다.</p>
+
+  <h2>4. 보관과 공유</h2>
+  <ol>
+    <li>토큰은 운영자 PC 안의 파일에만 저장하고, 외부 서버로 보내거나 다른 사람과 공유하지 않습니다.</li>
+    <li>영상과 정보는 틱톡 API로 운영자 본인 계정에만 보냅니다.</li>
+    <li>연결을 끊거나 토큰 파일을 지우면 저장된 정보는 바로 사라집니다. 틱톡 앱의 "앱 및 웹사이트 관리"에서도 언제든 연결을 해제할 수 있습니다.</li>
+  </ol>
+
+  <section class="en" lang="en">
+    <h2>Privacy Policy (English)</h2>
+    <p>Effective date: November 19, 2026</p>
+    <ol>
+      <li>"DBMTV Shorts" is a personal desktop tool used by a single person, the operator of the YouTube channel DBMTV, to send video drafts to the operator's own TikTok account. No one else signs in to it.</li>
+      <li>Data received: the TikTok access and refresh tokens issued after login, and basic account info (<code>user.info.basic</code>: account identifier and display name). The <code>video.upload</code> scope is used only to upload drafts. No data about other users, contacts, location or messages is collected.</li>
+      <li>Use: only to upload the operator's own videos to the operator's own TikTok inbox. No advertising, analytics or sale of data.</li>
+      <li>Storage and sharing: tokens are stored only in a local file on the operator's PC and are never sent to other servers or shared. Disconnecting or deleting the token file removes them immediately; access can also be revoked at any time in the TikTok app under "Manage app permissions".</li>
+    </ol>
+  </section>
+</div>
+</body>
+</html>
